@@ -1,13 +1,327 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+img{
+  display: inline-block;
+}
+span{
+  color: rgb(241, 82, 50);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input{
+  padding:18px;
+  display: block;
+  border: none;
+  box-shadow: 0px 0px 10px lightgrey;
+}
+footer{
+  color: white;
+  background-color: rgb(55, 55, 55);
+  padding: 66px 135px;
+  display: flex;
+  gap:37px;
+}
+footer ul{
+  display: flex;
+  flex-direction: column;
+  gap:11px;
+}
+footer h2{
+  margin-bottom: 25px;
+}
+footer p{
+  margin-bottom: 15px;
+}
+ul{
+  list-style-type: none;
+}
+
+button{
+  background-color: rgb(241, 82, 50);
+  color: white;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgb(241, 82, 50);
+  padding: 13px 22px 12px 19px;
+}
+.nav{
+display: flex;
+padding: 26px 0px;
+justify-content: space-around;
+}
+.nav ul{
+  display: flex;
+  gap: 38px;
+  align-self: center;
+}
+
+.sec-one{
+  background-color: rgb(254, 247, 244);
+  display: flex;
+  padding: 153px 135px;
+  gap:35px;
+  position: relative;
+}
+.sec-one figure{
+position: absolute;
+right: 0px;
+top:217px;
+}
+
+.sec-one div{
+  width: 40%;
+  margin-bottom: 11px;
+}
+.sec-one p{
+  color: gray;
+  margin-bottom: 50px;
+}
+.sec-two{
+  background-color: white;
+  padding: 120px 135px;
+}
+
+.sec-two p{
+color: gray;  
+margin-bottom: 25px;
+}
+.sec-two h6{
+  color: gray;
+  margin-bottom: 25px;
+}
+.sec-two h1{
+  margin-bottom: 18px;
+}
+.sec-two-flex-cards{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 60px;
+}
+.about-card{
+  text-align: center;
+  padding: 25px;
+  height: 150px;
+  width: 200px;
+  box-shadow: 0px 0px 5px lightgray;
+}
+.about-card h6{
+  color: darkslategrey;
+}
+
+.sec-three{
+  background-color: rgb(254, 247, 244);
+  padding: 60px 135px;
+  display: flex;
+}
+.sec-three .people-flex div:nth-child(2){
+  margin-top: 23px;
+}
+
+.sec-three h6{
+  color: gray;
+  margin-bottom: 25px;
+}
+.sec-three h1{
+  margin-bottom: 18px;
+}
+.sec-three p{
+  color: gray;
+  margin-bottom: 50px;
+}
+.sec-three-cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 0px 5px lightgrey;
+  height: 150px;
+  width: 150px;
+}
+.sec-three-cards h5{
+  color:grey;
+}
+
+.sec-four{
+text-align: center;
+background-color: white;
+padding: 120px 135px ;
+}
+.sec-four ul{
+display: flex;
+flex-direction: row;
+justify-content: center;
+gap:43px;
+margin-bottom: 60px;
+}
+.sec-four h6{
+  color: grey;
+  margin-bottom: 25px;
+}
+
+.sec-four h1{
+  margin-bottom:60px ;
+}
+
+.sec-four ul{
+  display: flex;
+  gap: 43px;
+  color: grey;
+}
+
+.gustavo{
+box-shadow: 0px 0px 10px lightgrey;
+height: 350px;
+width: 250px;
+position: relative;
+}
+
+.icon{
+position: absolute;
+right: -10px;
+top:28px;
+}
+
+.sec-five{
+  background-color: rgb(254, 247, 244);
+  padding: 60px 135px;
+  text-align: center;
+}
+
+.sec-five h6{
+  color: grey;
+  margin-bottom: 25px;
+}
+
+.sec-five h1{
+  margin-bottom: 50px;
+}
+
+.clients{
+  background-color:rgb(241, 82, 50);
+  color: white;
+  box-shadow: 0px 0px 5px rgb(241, 82, 50);
+  padding: 34px 35px 25px 65px;
+  position: relative;
+}
+
+.clients img{
+  position: absolute;
+  top: 25px;
+  left: -40px;
+}
+
+.clients h4{
+  margin-bottom: 7px;
+}
+
+.clients h6{
+  margin-bottom: 23px;
+  color: white;
+}
+
+.blogs{
+  box-shadow:0px 0px 10px lightgrey;
+  padding: 25px;
+  margin-top: 60px;
+  text-align: left;
+}
+
+.sec-six{
+  padding: 120px 135px;
+  background-color: white;
+  text-align: center;
+}
+.sec-six .people-flex{
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+
+.sec-six h6{
+  color: grey;
+  margin-bottom: 25px;
+}
+
+.flex{
+  display: flex;
+  gap: 48px;
+}
+
+.flex h6{
+  color:rgb(241, 82, 50);
+  margin-bottom: 18px;
+}
+
+.flex-2{
+  display: flex;
+  gap:10px;
+}
+
+.flex-2 div{
+  align-self: center;
+}
+
+.flex-2 h6{
+  margin-top: 6px;
+  color: grey;
+}
+.contact{
+  box-shadow: 0px 0px 10px lightgrey;
+  padding: 19px;
+}
+
+.contact h5{
+  text-align: left;
+  color: grey;
+}
+.contact-card{
+  display: flex;
+  gap:18px;
+}
+.people-flex{
+  display: flex;
+  gap:30px;
+}
+.client-flex{
+  display: flex;
+ gap:190px; 
+ text-align: left;
+}
+
+.copyright{
+  background-color:rgb(241, 82, 50);
+  color: white;
+  padding: 20px 135px;
+}
+.sec-six .people-flex h3{
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+form div{
+display: flex;
+margin-bottom: 29px;
+gap:10px;
+}
+
+.frames{
+  margin-top: 122px;
+  display: flex;
+  gap: 120px;
+}
+
+
+
+@media screen and (max-width:800px){
+  .sec-one figure{
+  display: none;
+    }
+
+
 }
