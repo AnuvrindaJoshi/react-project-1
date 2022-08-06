@@ -8,19 +8,17 @@ import SectionFour from './SectionFour';
 import SectionFive from './SectionFive';
 import SectionSix from './SectionSix';
 import Footer from './Footer';
-import Section from './data/Section';
 import Blog from './data/Blog';
 
 
 function App() {
-  const[section,setSection]=useState(Section);
   const[blog, setBlog]=useState(Blog);
   
   return (
    <>
    <Navigationbar/>
    <Sectionone/>
-   <Sectiontwo child={section}/>
+   <Sectiontwo/>
    <Sectionthree/>
    <SectionFour/>
    <SectionFive five={blog}/>

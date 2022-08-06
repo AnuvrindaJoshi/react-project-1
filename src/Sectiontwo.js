@@ -1,10 +1,13 @@
+import { useState } from 'react';
+
 import AboutCard from './AboutCard';
+import AboutUs from './data/AboutUs';
 import about from './Images/about.png';
 
 function Sectiontwo(props){
-if(!props.child || props.child.length === 0){
-  return <p>No data found</p>
-}
+const[aboutus, setAboutus]=useState(AboutUs);
+
+
 return(
 <>
 <div className="sec-two">
@@ -23,7 +26,7 @@ return(
 
 
 {
-  props.child.map((val)=>(
+  aboutus.map((val)=>(
 
     <AboutCard about={val}/>
 
@@ -37,5 +40,6 @@ return(
 </>
 )
 }
+
 
 export default Sectiontwo;

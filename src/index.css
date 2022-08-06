@@ -346,6 +346,22 @@ gap:10px;
       display: flex;
       flex-direction: column;
     }
+    .sec-three{
+      padding: 20px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .sec-three .people-flex{
+      display: flex;
+      flex-direction: column;
+    }
+    .sec-three-cards{
+      height: 200px;
+      width: 340px;
+    }
+   
 
 
 }
