@@ -1,19 +1,26 @@
+import { useState } from "react";
 import Blogs from "./Blogs";
 import ContactUs from "./ContactUs";
 import Form from "./Form";
 import Frames from "./Frames";
 import formImage from './Images/form.png';
+import LatestBlog from './data/LatestBlog';
 
 
 function SectionSix(){
+    const[latest, setLatest]=useState(LatestBlog);
+
     return (
         <>
         <div className='sec-six'>
             <h6>Our Blog</h6>
             <h1>Our Latest <span>Blogs Will Keep</span> Everyone Updated</h1>
             <div className='people-flex'>
-            <Blogs designation='Graphic Design' info='35 Stellar Graphic Design Blogs to Keep You Educated and Inspired' name='Graphic Design'/>
-            <Blogs designation='Managing Director' info='Ridiculously powerful 2021 iPad Pro may drop this month' name='Haylie Mango'/>
+            {latest.map((item)=>(
+
+                <Blogs val={item}/>
+
+            ))}
            </div>
             <ContactUs/>
 

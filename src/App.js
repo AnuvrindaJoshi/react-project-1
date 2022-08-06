@@ -9,9 +9,12 @@ import SectionFive from './SectionFive';
 import SectionSix from './SectionSix';
 import Footer from './Footer';
 import Section from './data/Section';
+import Blog from './data/Blog';
+
 
 function App() {
   const[section,setSection]=useState(Section);
+  const[blog, setBlog]=useState(Blog);
   
   return (
    <>
@@ -20,7 +23,7 @@ function App() {
    <Sectiontwo child={section}/>
    <Sectionthree/>
    <SectionFour/>
-   <SectionFive/>
+   <SectionFive five={blog}/>
    <SectionSix/>
    <Footer/>
    </>

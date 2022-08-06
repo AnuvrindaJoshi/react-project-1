@@ -1,13 +1,13 @@
-import justin from './Images/justin.png';
+
 
 function Clients(props){
 return (
     <>
     <div className='clients'>
-        <h4>{props.name}</h4>
-        <h6>{props.designation}</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit a laoreet libero dis eget maecenas bibendum. Morbi lacinia eu, etiam volutpat morbi et amet, sagittis adipiscing. </p>
-        <img src={justin} height={80} width={80}/>
+        <h4>{props.blogdata.title}</h4>
+        <h6>{props.blogdata.position}</h6>
+        <p> {props.blogdata.para}</p>
+        <img src={props.blogdata.img} />
     </div>
     </>
 )
