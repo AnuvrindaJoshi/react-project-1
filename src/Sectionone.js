@@ -11,7 +11,7 @@ function Sectionone(){
             <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
             <button>Contact Us</button>
         </div>
-        <img src={poster} width={500} height={300}/>
+        <img src={poster} className='img-one'/>
         <figure><img src={socialIcon}/></figure>
         </div>
         </>

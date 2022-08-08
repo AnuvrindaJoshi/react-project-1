@@ -51,13 +51,16 @@ button{
 display: flex;
 padding: 26px 0px;
 justify-content: space-around;
+align-items: center;
 }
 .nav ul{
   display: flex;
   gap: 38px;
   align-self: center;
 }
-
+.nav .menu{
+  display: none;
+}
 .sec-one{
   background-color: rgb(254, 247, 244);
   display: flex;
@@ -66,12 +69,18 @@ justify-content: space-around;
   gap:35px;
   position: relative;
 }
+.img-one{
+  height:429px ;
+  width:639px;
+}
 .sec-one figure{
 position: absolute;
 right: 0px;
 top:217px;
 }
-
+.sec-one h1{
+  margin-bottom: 11px;
+}
 .sec-one div{
   width: 40%;
   margin-bottom: 11px;
@@ -84,6 +93,11 @@ top:217px;
   background-color: white;
   padding: 120px 135px;
 }
+.img-two{
+  height:348px ;
+  width: 657px;
+}
+
 
 .sec-two p{
 color: gray;  
@@ -102,11 +116,17 @@ margin-bottom: 25px;
   justify-content: center;
   margin-top: 60px;
 }
+.sec-two .about-card img{
+  height: 70px;
+  width: 70px;
+}
 .about-card{
-  text-align: center;
-  padding: 25px;
-  height: 150px;
-  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:36px;
+  padding: 25px 33px; 
   box-shadow: 0px 0px 5px lightgray;
 }
 .about-card h6{
@@ -292,7 +312,7 @@ top:28px;
   display: flex;
   gap:18px;
 }
-.contact-card img{
+.sec-six .contact-card img{
   height: 75px;
   width: 75px;
 }
@@ -340,6 +360,9 @@ gap:10px;
   .nav ul{
     display: none;
   }
+  .nav .menu{
+    display: block;
+  }
 
   .sec-one figure{
   display: none;
@@ -351,16 +374,43 @@ gap:10px;
       padding: 50px 20px;
       text-align: center;
     }
+    .sec-one div{
+      width: 100%;
+      margin-bottom: 11px;
+    }
+    .img-one{
+      height:225px ;
+      width:335px;
+    }
     .sec-two{
       text-align: center;
-      display: flex;
-      flex-direction: column;
       padding: 50px 20px;
     }
-    .contact-card{
+    .img-two{
+      height:192px ;
+      width: 320px;
+    }
+    
+  
+    .sec-two .about-card img{
+      height: 50px;
+      width: 50px;
+    }
+    .about-card{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap:20px;
+      padding: 25px 42px;
+      width: 100%;
+      box-shadow: 0px 0px 5px lightgray;
+    }
+    .sec-two .contact-card{
       display: flex;
       flex-direction: column;
     }
+    
     .sec-two-flex-cards{
       align-items: center;
       display: flex;

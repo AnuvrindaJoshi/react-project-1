@@ -12,7 +12,7 @@ return(
 <>
 <div className="sec-two">
     <div className='contact-card'>
-    <figure><img src={about} height={250} width={400}/></figure>
+    <figure><img src={about} className='img-two'/></figure>
     <div>
         <h6>About us</h6>
         <h1>We Are <span>Making Ideas Better</span> For Everyone</h1>

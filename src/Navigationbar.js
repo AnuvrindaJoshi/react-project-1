@@ -1,5 +1,5 @@
 import dark from './icons/dark.png';
-
+import menu from './icons/Menu.svg';
 
 function Navigationbar(){
     return(
@@ -14,6 +14,7 @@ function Navigationbar(){
                 <li>Contact Us</li>
             </ul>
             <img src={dark}/>
+            <img src={menu} className='menu'/>
         </div>
     )
 }
