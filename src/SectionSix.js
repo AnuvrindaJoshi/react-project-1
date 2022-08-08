@@ -24,8 +24,8 @@ function SectionSix(){
            </div>
             <ContactUs/>
 
-            <div className="people-flex">
-            <figure><img src={formImage}/></figure>
+            <div className="people-flex form-flex">
+            <img src={formImage}/>
             <Form/>
             </div>
 

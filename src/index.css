@@ -276,9 +276,12 @@ top:28px;
   margin-top: 6px;
   color: grey;
 }
+.contact-us{
+  margin-top: 120px;
+}
 .contact{
   box-shadow: 0px 0px 10px lightgrey;
-  padding: 19px;
+  padding: 18px 24px;
 }
 
 .contact h5{
@@ -288,6 +291,10 @@ top:28px;
 .contact-card{
   display: flex;
   gap:18px;
+}
+.contact-card img{
+  height: 75px;
+  width: 75px;
 }
 .people-flex{
   display: flex;
@@ -309,11 +316,18 @@ display: flex;
 margin-bottom: 29px;
 gap:10px;
 }
-
+.form-flex img{
+  width:632px;
+  height:333px;
+}
 .frames{
   margin-top: 122px;
   display: flex;
   gap: 120px;
+}
+.frames img{
+  height: 167px;
+  width:213px;
 }
 
 
@@ -449,6 +463,67 @@ gap:10px;
 
   .flex-2 h6{
     margin-top: 1px;
+    margin-bottom: 0px;
+  }
+  .contact-us .people-flex{
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+  }
+  .contact-us h6{
+    margin-bottom: 18px;
+  }
+  .contact-us h1{
+    margin-bottom: 18px;
+  }
+  .contact-card{
+    display: flex;
+    flex-direction: row;
+  }
+  .contact-card div{
+    align-self: center;
+  }
+  form div{
+  display: flex;
+  flex-direction: column;
+  gap:0px;
+  margin-bottom: 0px;
+  }
+  form input {
+    margin-bottom: 18px;
+  }  
+  .form-flex{
+    display: flex;
+    flex-direction: column;
+  }
+  .form-flex img{
+    margin: auto;
+    width:261px;
+    height:168px;
+  }
+  .frames{
+    margin-top: 50px;
+    display: flex;
+    gap: 29px;
+  }
+  .frames img{
+    height: 53px;
+    width:67px;
+  }
+  footer{
+    padding: 50px 26px 50px 15px;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+  }
+  footer h2{
+    margin-bottom: 18px;
+  }
+  footer p{
+    margin-bottom: 18px;
+  }
+  .copyright{
+    padding: 18px 40px;
   }
 
 }
