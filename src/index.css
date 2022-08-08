@@ -209,7 +209,11 @@ top:28px;
   padding: 34px 35px 25px 65px;
   position: relative;
 }
-
+.client-flex{
+  display: flex;
+ gap:190px; 
+ text-align: left;
+}
 .clients img{
   position: absolute;
   top: 25px;
@@ -223,13 +227,6 @@ top:28px;
 .clients h6{
   margin-bottom: 23px;
   color: white;
-}
-
-.blogs{
-  box-shadow:0px 0px 10px lightgrey;
-  padding: 25px;
-  margin-top: 60px;
-  text-align: left;
 }
 
 .sec-six{
@@ -247,6 +244,13 @@ top:28px;
 .sec-six h6{
   color: grey;
   margin-bottom: 25px;
+}
+
+.blogs{
+  box-shadow:0px 0px 10px lightgrey;
+  padding: 25px;
+  margin-top: 60px;
+  text-align: left;
 }
 
 .flex{
@@ -289,11 +293,6 @@ top:28px;
   display: flex;
   gap:30px;
 }
-.client-flex{
-  display: flex;
- gap:190px; 
- text-align: left;
-}
 
 .copyright{
   background-color:rgb(241, 82, 50);
@@ -332,17 +331,24 @@ gap:10px;
   display: none;
     }
     .sec-one{
+      align-items: center;
       display: flex;
       flex-direction: column-reverse;
       padding: 50px 20px;
       text-align: center;
     }
     .sec-two{
+      text-align: center;
       display: flex;
       flex-direction: column;
       padding: 50px 20px;
     }
+    .contact-card{
+      display: flex;
+      flex-direction: column;
+    }
     .sec-two-flex-cards{
+      align-items: center;
       display: flex;
       flex-direction: column;
     }
@@ -361,10 +367,88 @@ gap:10px;
       height: 200px;
       width: 340px;
     }
+    .sec-three button{
+      margin-bottom: 50px;
+    }
    .sec-four{
     padding: 50px 16px;
    }
-   
+   .sec-four .people-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .sec-five{
+    text-align: center;
+    padding: 50px 36px;
+   }
+   .sec-five h6 {
+    margin-bottom: 18px;
+  }
+  .sec-five h1{
+    margin-bottom: 18px;
+  }
+  
+   .client-flex{
+   display: flex;
+   flex-direction: column; 
+   text-align: left;
+   align-items: center;
+   gap:38px;
+  }
+  .clients{
+    padding: 26px 12px 18px 35px;
+  }
+  .clients img{
+    position: absolute;
+    top: 25px;
+    left: -20px;
+    height: 40px;
+    width: 40px;
+  }
+  .clients h4{
+    margin-bottom: 7px;
+  }
+  
+  .clients h6{
+    margin-bottom: 12px;
+    color: white;
+  }
+  .sec-six{
+    padding: 50px 35px;
+    text-align: center;
+  }
+  .sec-six .people-flex{
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+    gap:18px;
+  }
+  .blogs{
+    padding: 18px;
+    margin-top: 60px;
+    text-align: left;
+  }
+  .blogs .flex img{
+    height: 80px;
+    width:80px;
+  }
+  .flex{
+    display: flex;
+    gap: 10px;
+  }
+  
+  .flex h6{
+    margin-bottom: 6px;
+  }
 
+  .blogs .flex-2 img{
+    height: 40px;
+    width:40px;
+  }
+
+  .flex-2 h6{
+    margin-top: 1px;
+  }
 
 }
