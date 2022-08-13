@@ -13,6 +13,7 @@ import Footer from './Footer';
 import Blog from './data/Blog';
 import Login from './Login';
 import SignUp from './SignUp';
+import Navbar from './components/navbar/Navbar';
 
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
         <SectionFour/>
         <SectionFive five={blog}/>
         <SectionSix/>
-        <Footer/>
+        <Footer/> 
         </>
       }
     />
