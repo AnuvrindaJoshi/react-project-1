@@ -1,9 +1,13 @@
 
 import {Link} from 'react-router-dom';
 import log from './Images/login.png';
+import {toast} from 'react-toastify';
 
 function Login() {
-
+const buttonClick=(e)=>{
+  e.preventDefault();
+toast.error('login FAILED');
+}
 
 
   return (
@@ -16,7 +20,7 @@ function Login() {
         <form>
         <input type='text' placeholder='Email' />
         <input type='text' placeholder='Password'/>
-        <button>Login</button>
+        <button onClick={buttonClick}>Login</button>
         </form>
 
         <h1>New here?</h1>

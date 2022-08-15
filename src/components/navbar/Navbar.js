@@ -14,7 +14,7 @@ setClick(!click)
         <nav className="navbar">
 <div className="nav-container">
     <Link to='/' className="nav-logo">Digiency</Link>
-    <ul className={click ? 'nav-menu active' : 'nav-menuffc x'}>
+    <ul className={click ? 'nav-menu active' : 'nav-menu'}>
         <li className="nav-item"><Link to='/' className="nav-links">Home</Link></li>
         <li className="nav-item"><Link to='/' className="nav-links">About Us</Link></li>
         <li className="nav-item"><Link to='/' className="nav-links">Our Work</Link></li>

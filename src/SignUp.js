@@ -1,8 +1,17 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import {toast} from 'react-toastify';
 import sign from './Images/signup.png';
 
 function SignUp(){
+
+const buttonClick=(e)=>{
+    e.preventDefault();
+    toast.error('signup FAILED!',{
+        position: "bottom-center"
+    })
+}
+
 
     const[username,setUsername]=useState('');
     const[message,setMessage]=useState('');
@@ -62,7 +71,7 @@ const checkPassword2=(e)=>{
         <input placeholder='Password' type='password' value={password1} onChange={checkPassword1}/>
         <input placeholder='Confirm your Password' type='password' value={password2} onChange={checkPassword2}/>
         <h5><span>{message}</span></h5>
-        <button>Register</button>
+        <button onClick={buttonClick}>Register</button>
         </form>
         </div>
 
