@@ -41,6 +41,9 @@ function App() {
 
       <Route path='/login' element={<Login/>} />
       <Route path='/Signup' element={<SignUp/>}/>
+      <Route path='/about' element={<Sectiontwo/>}/>
+      <Route path='/clients' element={<SectionFive five={blog}/>}/>
+      <Route path='/blogs' element={<SectionSix/>}/>
    </Routes>
       </Router>
       <ToastContainer/>
