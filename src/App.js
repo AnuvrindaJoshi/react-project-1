@@ -16,6 +16,7 @@ import Blog from './data/Blog';
 import Login from './Login';
 import SignUp from './SignUp';
 import Navbar from './components/navbar/Navbar';
+import ContactUs from './ContactUs';
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
       <Route path='/about' element={<Sectiontwo/>}/>
       <Route path='/clients' element={<SectionFive five={blog}/>}/>
       <Route path='/blogs' element={<SectionSix/>}/>
+      <Route path='/contact-us' element={<ContactUs/>}/>
    </Routes>
       </Router>
       <ToastContainer/>

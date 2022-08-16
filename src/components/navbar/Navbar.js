@@ -20,7 +20,7 @@ setClick(!click)
         <li className="nav-item"><Link to='/' className="nav-links">Our Work</Link></li>
         <li className="nav-item"><Link to='/clients' className="nav-links">Clients</Link></li>
         <li className="nav-item"><Link to='/blogs' className="nav-links">Our Blogs</Link></li>
-        <li className="nav-item"><Link to='/' className="nav-links">Contact Us</Link></li>
+        <li className="nav-item"><Link to='/contact-us' className="nav-links">Contact Us</Link></li>
     </ul>
 
 <div className='nav-icon' onClick={handleClick}>
